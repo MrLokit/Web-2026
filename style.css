@@ -1,28 +1,23 @@
+@font-face {
+    font-family: 'Golos UI';
+    src: url('fonts/Golos-UI_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
-    font-family: 'Arial', Helvetica, sans-serif;
+    font-family: 'Golos UI', Arial, Helvetica, sans-serif;
     margin: 0;
     background: #fafafa;
 }
 
 /* Меню */
-.menu {
-    float: left;
-    margin-top: 50px;
-}
-
-.menu__item {
-    display: block;
-    margin: 20px;
-    width: 50px; 
-}
-
-.menu__item img {
-    width: 100%;
-}
-
-/* Страницы (общее) */
-.feed-page, .profile-page, .login-page { 
-    overflow: hidden; 
+nav {
+    width: 72px;
+    height: 1080px;
+    left: -1px;
+    border-right: 1px solid rgba(34, 34, 34, 0.05)
 }
 
 /* Авторизация */
@@ -31,111 +26,195 @@ body {
     margin: 0 auto;
 }
 
-.login__header {
-    float: left;
+.header {
     width: 462px;
-    margin-right: 30px;
-}
-
-.login__photo {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.login__form {
-    margin-top: 200px;
-}
-
-.login__input {
-    height: 30px;
-    width: 250px;
-    border-radius: 5px;
-    background-color: rgb(232, 232, 232);
-    border: none;
-    margin-bottom: 5px;
-}
-
-.login__input-description {
-    font-size: 12px;
-    color: gray;
     margin-bottom: 30px;
 }
 
-.login__button {
-    display: block;
-    height: 30px;
-    width: 258px;
-    margin-top: 20px;
-    background-color: black;
+.header__title {
+    width: 385px;
+    height: 180px;
+    font-size: 140px; 
+    /* margin: 182px 0 0 179px; */
+}
+
+.header__photo {
+    width: 462px;
+    height: 501px;
+    /* margin: 289px 0 0 269px; */
+}
+
+.form {
+    /* margin: 415px 0 0 838px; */
+    width: 343px;
+    height: 251px;
+    gap: 32px;
+}
+
+.form__title {
+    font-size: 16px;
+    height: 18px;
+    width: 100%;
+    margin: 0;
+}
+
+.form__input {
+    height: 44px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 13px 12px;
+    justify-content: space-between;
+    background-color: #f2f3f5;
+    border: none;
+    box-sizing: border-box;
+}
+
+.form__input-description {
+    font-size: 13px;
+    height: 16px;
+    width: 100%;
+    color: #808080;
+    margin: 0 0 5px 0;
+}
+
+.form__button {
+    height: 48px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #222222;
     color: white;
     border-radius: 10px;
+    padding: 0 16px;
     border: none;
-    cursor: pointer;
+    box-sizing: border-box;
 }
 
 /* Лента */
+
 .feed {
-    margin-left: 20px; 
+    margin: 73px 0 0 0;
 }
 
 .post {
-    width: 500px;
+    width: 474px;
+    height: 700px;
     margin: 20px auto 50px auto;
     background: white;
 }
 
 .post__header {
-    margin-bottom: 15px;
+    width: 474px;
+    height: 32px;
+    margin-top: 16px;
+}
+
+.post__edit {
+    width: 24px;
+    height: 24px;
 }
 
 .post__avatar {
-    float: left;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    margin-bottom: 5px;
 }
 
 .post__author {
-    font-size: 20px;
-    line-height: 50px;
+    font-size: 14px;
+    height: 18px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .post__image {
-    width: 100%;
-    height: auto;
+    width: 474px;
+    height: 474px;
+    margin-top: 70px;
+}
+
+.post_reactions {
+    width: 68px;
+    height: 30px;
+    margin-top: 554px;
     border-radius: 8px;
-    margin-bottom: 10px;
+    padding: 6px 12px;
+    gap: 3px;
+}
+
+.post__discription {
+    width: 474px;
+    height: 37px;
+    font-size: 15px;
+    margin-top: 600px; 
+}
+
+.post__more {
+    width: 28px;
+    height: 18px;
+    font-size: 15px;
+    color: rgba(128, 128, 128, 1);
+    margin-top: 636px;
 }
 
 .post__time {
-    color: gray;
-    font-size: 12px;
+    color: rgba(34, 34, 34, 0.5);
+    font-size: 14px;
+    height: 18px;
+    /* margin-top: 662px; */
 }
 
-/* Профиль*/
+/* Профиль */
 .profile {
-    text-align: center;
+    margin-left: 0;
 }
 
 .profile__photo {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    margin: 20px auto 10px;
+    width: 123px;
+    height: 123px;
+    border-radius: 16px;
+    /* margin: 97px 0 0 658.5px; */
+}
+
+.profile__name {
+    width: 361px;
+    height: 32px;
+    /* margin: 240px 0 0 539.5px; */
+    font-size: 32px;
+    text-align: center;
+}
+
+.profile__description {
+    width: 361px;
+    height: 36px;
+    /* margin: 282px 0 0 539.5px; */
+    font-size: 15px;
+    text-align: center;
+}
+
+.profile__post-counter {
+    width: 101px;
+    height: 30px;
+    /* margin: 330px 0 0 669.5px; */
+    border-radius: 6px;
+    padding: 6px 10px;
+    background: rgba(242, 243, 245, 1);
+}
+
+.profile_picture-icon {
+    width: 16px;
+    height: 16px;
 }
 
 .profile__gallery {
-    width: 900px;
-    margin: 0 auto;
-    overflow: hidden;
+    width: 976px;
+    height: 1621.65px;
+    gap: 2.48px;
+    /* margin: 402px 0 0 234px; */
 }
 
 .profile__gallery-item {
-    float: left;
-    width: 295px;
-    height: 295px;
-    margin: 0 5px 5px 0;
-    border-radius: 5px;
+    width: 322.35px;
+    height: 322.35px;
+    border-radius: 2px;
 }
