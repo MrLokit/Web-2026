@@ -20,6 +20,16 @@ nav {
     border-right: 1px solid rgba(34, 34, 34, 0.05)
 }
 
+.menu__item {
+    display: block;
+    margin: 20px;
+    width: 20px; 
+}
+
+.menu__item img {
+    width: 100%;
+}
+
 /* Авторизация */
 .login-page {
     width: 1000px;
@@ -35,17 +45,14 @@ nav {
     width: 385px;
     height: 180px;
     font-size: 140px; 
-    /* margin: 182px 0 0 179px; */
 }
 
 .header__photo {
     width: 462px;
     height: 501px;
-    /* margin: 289px 0 0 269px; */
 }
 
 .form {
-    /* margin: 415px 0 0 838px; */
     width: 343px;
     height: 251px;
     gap: 32px;
@@ -103,6 +110,8 @@ nav {
 }
 
 .post__header {
+    text-decoration: none;
+    color: black;
     width: 474px;
     height: 32px;
     margin-top: 16px;
@@ -114,8 +123,6 @@ nav {
 }
 
 .post__avatar {
-    width: 32px;
-    height: 32px;
     border-radius: 6px;
     margin-bottom: 5px;
 }
@@ -161,7 +168,6 @@ nav {
     color: rgba(34, 34, 34, 0.5);
     font-size: 14px;
     height: 18px;
-    /* margin-top: 662px; */
 }
 
 /* Профиль */
@@ -173,13 +179,11 @@ nav {
     width: 123px;
     height: 123px;
     border-radius: 16px;
-    /* margin: 97px 0 0 658.5px; */
 }
 
 .profile__name {
     width: 361px;
     height: 32px;
-    /* margin: 240px 0 0 539.5px; */
     font-size: 32px;
     text-align: center;
 }
@@ -187,7 +191,6 @@ nav {
 .profile__description {
     width: 361px;
     height: 36px;
-    /* margin: 282px 0 0 539.5px; */
     font-size: 15px;
     text-align: center;
 }
@@ -195,7 +198,6 @@ nav {
 .profile__post-counter {
     width: 101px;
     height: 30px;
-    /* margin: 330px 0 0 669.5px; */
     border-radius: 6px;
     padding: 6px 10px;
     background: rgba(242, 243, 245, 1);
@@ -210,7 +212,6 @@ nav {
     width: 976px;
     height: 1621.65px;
     gap: 2.48px;
-    /* margin: 402px 0 0 234px; */
 }
 
 .profile__gallery-item {
