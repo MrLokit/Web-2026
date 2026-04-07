@@ -3,7 +3,7 @@
 <head>
     <title>Авторизация</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../src/styles/login.css">
 </head>
 <body>                
     <div class="login-page">
@@ -11,13 +11,21 @@
             <h1 class="header__title">Войти</h1>
             <img src="../img/header_photo.png" alt="header photo" class="header__photo" style="width: 462px; height: 501px;">
         </div>
+        <div class="login-page__spacer"></div>
         <div class="form">
             <form>
                 <p class="form__title">Электропочта</p>
                 <input type="email" name="email" class="form__input">
                 <p class="form__input-description">Введите электропочту в формате ****@***.**</p>
+
                 <p class="form__title">Пароль</p>
-                <input type="password" name="password" class="form__input">
+                <div class="password-field">
+                    <input type="password" name="password" class="form__input form__input--password">
+                    <button type="button" class="password-toggle" aria-label="Показать пароль">
+                        <img src="../img/Eye-off 24.png" alt="Показать/скрыть пароль" class="password-toggle__icon">
+                    </button>
+                </div>
+
                 <button class="form__button">Продолжить</button>
             </form>
         </div>
