@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Если файл или папка реально существуют, то не трогаем
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# /post/123 это home/post.php?postId=123
+RewriteRule ^post/([0-9]+)$ home/post.php?postId=$1 [L,QSA]

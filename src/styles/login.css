@@ -22,10 +22,10 @@ body {
 .login-page {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 180px;
+    margin-top: 140px;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 1fr 107px 1fr;
+    grid-template-columns: 1fr 1px 1fr;
     gap: 40px;
     align-items: center;
 }
@@ -49,8 +49,6 @@ body {
 
 .header__photo {
     display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 /* Пробел в центре */
